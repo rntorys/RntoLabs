@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RntoLabs: proyectos, experimentos y productos digitales creados por Renato Reyes.">
+  <meta name="theme-color" content="#0a0a0c">
+  <meta property="og:title" content="RntoLabs — Ideas que se convierten en productos">
+  <meta property="og:description" content="El laboratorio digital de Renato Reyes.">
+  <title>RntoLabs — Ideas que se convierten en productos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="RntoLabs, volver al inicio">
+      <span class="brand-mark">R</span>
+      <span>Rnto<span class="accent">Labs</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar tema">
+        <span aria-hidden="true">◐</span>
+      </button>
+      <a class="button button-small button-ghost" href="https://github.com/rntorys" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="eyebrow"><span class="pulse"></span> Construyendo desde Santiago, Chile</div>
+      <h1>Ideas que no se quedan<br><span class="gradient-text">solamente en ideas.</span></h1>
+      <p class="hero-copy">Soy Renato Reyes. Diseño y desarrollo productos digitales que resuelven problemas reales, desde herramientas universitarias hasta plataformas de inversión y servicios web.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#proyectos">Explorar proyectos <span>↓</span></a>
+        <a class="button button-secondary" href="https://github.com/rntorys?tab=repositories" target="_blank" rel="noopener noreferrer">Ver código <span>↗</span></a>
+      </div>
+
+      <div class="stats" aria-label="Resumen de actividad">
+        <div class="stat"><strong id="project-count">05</strong><span>proyectos</span></div>
+        <div class="stat"><strong>2026</strong><span>en construcción</span></div>
+        <div class="stat"><strong>∞</strong><span>ideas pendientes</span></div>
+      </div>
+    </section>
+
+    <section class="projects-section section" id="proyectos">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Trabajo seleccionado</p>
+          <h2>Proyectos del laboratorio</h2>
+        </div>
+        <p>Cada proyecto comienza con una pregunta sencilla: ¿cómo podría funcionar mejor?</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrar proyectos">
+        <button class="filter active" type="button" data-filter="all">Todos</button>
+        <button class="filter" type="button" data-filter="product">Productos</button>
+        <button class="filter" type="button" data-filter="web">Web</button>
+        <button class="filter" type="button" data-filter="experiment">Experimentos</button>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+        <article class="project-card featured" data-category="product">
+          <div class="project-visual lectum-visual">
+            <span class="visual-label">Producto destacado</span>
+            <div class="mock-window">
+              <div class="mock-bar"><i></i><i></i><i></i></div>
+              <div class="mock-content">
+                <div class="mock-sidebar"></div>
+                <div class="mock-dashboard">
+                  <span></span><span></span><span></span>
+                  <div class="mock-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>01</span><span class="status live">En desarrollo</span></div>
+            <h3>Lectum</h3>
+            <p>Dashboard académico para organizar notas, ponderaciones, evaluaciones y el progreso universitario desde un solo lugar.</p>
+            <div class="tags"><span>JavaScript</span><span>LocalStorage</span><span>UX/UI</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="product">
+          <div class="project-visual aurum-visual">
+            <span class="orb orb-one"></span><span class="orb orb-two"></span>
+            <div class="aurum-line"><span>AURUM</span><strong>+12.48%</strong></div>
+            <svg viewBox="0 0 400 120" role="img" aria-label="Gráfico ascendente decorativo">
+              <path d="M0 100 C50 94, 72 62, 116 72 S182 92, 224 46 S288 58, 330 24 S374 20, 400 2"></path>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>02</span><span class="status live">Activo</span></div>
+            <h3>Aurum</h3>
+            <p>Panel personal para visualizar inversiones, evolución del portafolio y objetivos financieros de largo plazo.</p>
+            <div class="tags"><span>Fintech</span><span>Data</span><span>Dashboard</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-visual weblio-visual">
+            <div class="weblio-word">Weblio<span>.</span></div>
+            <div class="floating-card card-a"></div>
+            <div class="floating-card card-b"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>03</span><span class="status live">Activo</span></div>
+            <h3>Weblio</h3>
+            <p>Servicio de creación de páginas presentativas para profesionales y pequeños negocios que necesitan presencia digital.</p>
+            <div class="tags"><span>Web Design</span><span>Branding</span><span>Frontend</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="product">
+          <div class="project-visual mintora-visual">
+            <div class="mintora-cube"><span></span><span></span><span></span></div>
+            <p>Recursos para avanzar.</p>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>04</span><span class="status paused">Exploración</span></div>
+            <h3>Mintora</h3>
+            <p>Marketplace de recursos digitales prácticos: plantillas de productividad, currículums ATS y herramientas financieras.</p>
+            <div class="tags"><span>E-commerce</span><span>Digital</span><span>Productividad</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="experiment">
+          <div class="project-visual labs-visual">
+            <div class="lab-rings"><i></i><i></i><i></i><strong>R</strong></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>05</span><span class="status new">Nuevo</span></div>
+            <h3>RntoLabs</h3>
+            <p>El hogar de mis proyectos, experimentos e ideas. Esta página también es un proyecto: siempre estará evolucionando.</p>
+            <div class="tags"><span>Portfolio</span><span>GitHub Pages</span><span>Open Source</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre-mi">
+      <div class="about-card">
+        <div class="about-number">18<span>años</span></div>
+        <div class="about-copy">
+          <p class="kicker">Detrás del laboratorio</p>
+          <h2>Aprender construyendo.</h2>
+          <p>Estudio Ingeniería Civil Informática en la Universidad Técnica Federico Santa María. Me interesan el desarrollo de software, la inteligencia artificial, los negocios y convertir problemas cotidianos en productos claros y útiles.</p>
+          <p>RntoLabs es el registro público de ese proceso: proyectos terminados, ideas en desarrollo y experimentos de los que todavía queda mucho por aprender.</p>
+          <div class="principles">
+            <span>01 · Utilidad primero</span>
+            <span>02 · Diseño con intención</span>
+            <span>03 · Mejorar siempre</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <p class="kicker">El siguiente experimento</p>
+      <h2>¿Construimos algo<br><span class="gradient-text">interesante?</span></h2>
+      <p>Estoy abierto a colaborar, conversar sobre una idea o recibir feedback sobre cualquiera de mis proyectos.</p>
+      <div class="contact-actions">
+        <a class="button button-primary" href="https://github.com/rntorys" target="_blank" rel="noopener noreferrer">Encontrarme en GitHub ↗</a>
+        <button class="button button-secondary" id="copy-handle" type="button" data-handle="@rntorys">Copiar usuario</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">R</span><span>Rnto<span class="accent">Labs</span></span></a>
+    <p>Diseñado y construido por Renato Reyes.</p>
+    <p>© <span id="year"></span> · Santiago, Chile</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Usuario copiado</div>
+</body>
+</html>
